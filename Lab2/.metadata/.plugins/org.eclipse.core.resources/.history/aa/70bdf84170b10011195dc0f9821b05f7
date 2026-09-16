@@ -1,0 +1,13 @@
+package practicas1y2;
+
+public class MiPunto {
+	//Atributos
+	private double x;
+	private double y;
+	
+	//Constructor sin argumento de coordenadas [0,0]
+	public MiPunto() {
+		this.x = 0;
+		this.y = 0;
+	}
+}

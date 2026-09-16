@@ -1,0 +1,8 @@
+package practicas1y2;
+
+public class AlgebraVectorial {
+	//perpendicularidad
+	public boolean esPerpendicular(Vector3D a, Vector3D b) {
+		Vector3D vectorSuma = a.suma(b);
+		Vector3D vectorResta = a.resta(b);
+}

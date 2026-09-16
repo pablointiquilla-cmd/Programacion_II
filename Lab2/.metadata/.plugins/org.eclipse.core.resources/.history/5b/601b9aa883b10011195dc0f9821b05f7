@@ -1,0 +1,21 @@
+package practicas1y2;
+
+public class AlgebraVectorial {
+	//perpendicularidad por valor abs
+	public boolean esPerpendicular(Vector3D a, Vector3D b) {
+		Vector3D vectorSuma = a.suma(b);
+		Vector3D vectorResta = a.resta(b);
+		double diferencia = Math.abs(vectorSuma.longitud() - vectorResta.longitud());
+		return diferencia < 0.0001;
+	}
+	
+	//perpendicularidad por producto punto
+	public boolean esPerpendicular(Vector3D a, Vector3D b, String modo) {
+		if(modo.equalsIgnoreCase("punto")) {
+			return Math.abs(a.multiEscalar(b)) < 0.0001;
+		}else if(modo.equalsIgnoreCase("pitagoras")) {
+			double izq = Math.pow(a.suma(b).longitud(), 2);
+			double der = Math.pow(a.longitud(), 2) + Math.pow(b.longitud(), 2)
+		}
+	}
+}
