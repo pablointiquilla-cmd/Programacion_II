@@ -1,7 +1,0 @@
-package practicas1y2;
-
-public class TestMiPunto {
-	public static void main(String[] args) {
-		
-	}
-}
